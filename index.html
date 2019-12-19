@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=EDGE"/>
 	<title>Lorem Ipsum</title>
-	<link rel="icon" href="assets/images/flavicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/flavicon.png" type="image/png">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
@@ -18,16 +18,20 @@
 <body>
 
 <header class="main-header">
+
 	<div class="container">
 		<nav class="navbar navbar-expand-lg ">
-			<a class="navbar-brand" href="#">
-				<img class="brand__logo" src="assets/images/logo.svg" alt="Lorem Ipsum">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 			
-			<div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+			<div class="main-header-mobile">
+				<a class="navbar-brand" href="#">
+					<img class="brand__logo" src="assets/images/logo.svg" alt="Lorem Ipsum">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			
+			<div class="navbar-collapse main-menu">
 				<ul class="navbar-nav mr-auto left-side">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Features</a>
@@ -46,7 +50,23 @@
 			</div>
 		</nav>
 	</div>
-	
+	<div class="collapse navbar-collapse mobile-menu" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto left-side">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Customers</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			</li>
+		</ul>
+		<div class="my-2 my-lg-0 right-side">
+			<a href="#" class="btn btn-login">Login</a>
+			<a href="#" class="btn">Start Now</a>
+		</div>
+	</div>
 </header>
 
 <main>
@@ -100,7 +120,7 @@
 	
 	<!-- Half Section -->
 	<div class="half-section row">
-		<div class="first-half col">
+		<div class="first-half col col-sm-12 col-md-6">
 			<div class="half-section__element">
 				<h2 class="half-section__title">PUBLISHERS</h2>
 				<div class="half-section__description">
@@ -109,7 +129,7 @@
 				<a href="#" class="half-section__button btn">Become a Publisher</a>
 			</div>
 		</div>
-		<div class="second-half col">
+		<div class="second-half col col-sm-12 col-md-6">
 			<div class="half-section__element">
 				<h2 class="half-section__title">ADVERTISERS</h2>
 				<div class="half-section__description">

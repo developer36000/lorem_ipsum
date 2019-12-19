@@ -52,28 +52,72 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center; }
-  @media screen and (max-width: 769px) {
+  justify-content: center;
+  position: relative; }
+  @media screen and (max-width: 992px) {
     .main-header {
-      min-height: inherit; } }
+      min-height: inherit;
+      background: transparent; }
+      .main-header .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0; } }
   .main-header .navbar {
     background: transparent !important;
     padding: 0; }
-    @media screen and (min-width: 769px) {
-      .main-header .navbar .navbar-brand {
+  .main-header .navbar-brand {
+    display: block; }
+    @media screen and (min-width: 992px) {
+      .main-header .navbar-brand {
         display: none; } }
-    .main-header .navbar .navbar-brand img {
+    .main-header .navbar-brand img {
       display: block;
       width: 100%;
       max-width: 50%;
       height: auto; }
+  .main-header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(246, 141, 30)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-.main-menu .right-side {
+.main-header-mobile {
+  background: url("../images/menu_background.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  min-height: 95px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 5px; }
+  @media screen and (max-width: 992px) {
+    .main-header-mobile {
+      min-height: inherit; } }
+  @media screen and (min-width: 992px) {
+    .main-header-mobile {
+      display: none; } }
+
+@media screen and (max-width: 992px) {
+  .main-menu {
+    display: none; } }
+
+.main-menu .right-side,
+.mobile-menu .right-side {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
-  .main-menu .right-side .btn:not(:last-child) {
+  .main-menu .right-side .btn:not(:last-child),
+  .mobile-menu .right-side .btn:not(:last-child) {
     margin-right: 31px; }
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-top: 2px solid #f68d1e;
+  transition: all .3s; }
 
 .navbar-nav .nav-item {
   color: #fff;
@@ -98,9 +142,10 @@ body {
   flex-direction: column;
   align-items: stretch;
   justify-content: center; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 992px) {
     .main-footer {
-      min-height: inherit; } }
+      min-height: inherit;
+      padding: 25px 0; } }
   .main-footer__logo {
     max-width: 175px;
     width: 100%;
@@ -109,6 +154,11 @@ body {
       width: 100%;
       height: auto;
       display: block; }
+  .main-footer__widgets {
+    padding-left: 3%; }
+    @media screen and (max-width: 992px) {
+      .main-footer__widgets {
+        padding-left: 15px; } }
 
 .widget__title {
   font-family: "Roboto", sans-serif;
@@ -141,7 +191,7 @@ body {
   background-size: cover;
   min-height: 549px;
   padding: 25px 0; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 992px) {
     .main-section {
       min-height: inherit; } }
   .main-section__logo {
@@ -157,7 +207,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 3%; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 992px) {
       .main-section__title {
         font-size: 28px; } }
   .main-section__description {
@@ -166,7 +216,7 @@ body {
     font-size: 25px;
     text-align: center;
     color: #fff; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 992px) {
       .main-section__description {
         font-size: 18px; } }
     .main-section__description * {
@@ -195,9 +245,11 @@ body {
     height: 27px;
     top: 0;
     z-index: -1; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 992px) {
     .cta-section {
-      min-height: inherit; } }
+      min-height: inherit; }
+      .cta-section .container {
+        max-width: 100%; } }
 
 .cta-elements {
   max-width: 1170px;
@@ -205,6 +257,15 @@ body {
 
 .elements {
   font-family: "Roboto", sans-serif; }
+  @media screen and (max-width: 992px) {
+    .elements {
+      margin-bottom: 15px;
+      width: 100%;
+      flex: 1 0 100%;
+      max-width: 50%; } }
+  @media screen and (max-width: 560px) {
+    .elements {
+      max-width: 100%; } }
   .elements__image {
     max-width: initial;
     width: 100%;
@@ -234,8 +295,9 @@ body {
 
 /* Half Section */
 .half-section {
-  min-height: 650px; }
-  @media screen and (max-width: 769px) {
+  min-height: 650px;
+  margin: 0; }
+  @media screen and (max-width: 992px) {
     .half-section {
       min-height: inherit; } }
   .half-section * {
@@ -248,7 +310,7 @@ body {
     padding-bottom: 4%;
     position: relative;
     padding-left: 7.5%; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 992px) {
       .half-section .first-half,
       .half-section .second-half {
         padding-left: 15px; } }
@@ -265,6 +327,9 @@ body {
     background: url("../images/publishers_background.jpg") no-repeat 50% 50%; }
     .half-section .first-half .half-section__element {
       margin-left: auto; }
+      @media screen and (max-width: 992px) {
+        .half-section .first-half .half-section__element {
+          margin-left: 0; } }
   .half-section .second-half {
     background: url("../images/advertisers_background.jpg") no-repeat 50% 50%; }
     .half-section .second-half .half-section__element {
@@ -279,13 +344,13 @@ body {
     font-weight: 700;
     font-size: 80px;
     margin-bottom: 6%; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 992px) {
       .half-section__title {
         font-size: 32px; } }
   .half-section__description {
     font-size: 33.5px;
     font-weight: 300; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 992px) {
       .half-section__description {
         font-size: 20px; } }
     .half-section__description * {
