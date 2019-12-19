@@ -1,0 +1,29 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 126px;
+	min-height: 53px;
+	color: $d-blue;
+	background: $orange;
+	border: 1px solid $orange;
+	border-radius: 10px;
+	transition: all .3s;
+	font-size: 25px;
+	font-family: $roboto;
+	font-weight: 100;
+	&:hover,
+	&:focus {
+		background: transparent;
+		color: $orange;
+	}
+}
+.btn-login {
+	background: transparent;
+	color: $orange;
+	&:hover,
+	&:focus {
+		background: $orange;
+		color: $d-blue;
+	}
+}

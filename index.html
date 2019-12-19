@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=EDGE"/>
 	<title>Lorem Ipsum</title>
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
 	
 	<!-- Styles -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,16 +15,134 @@
 </head>
 <body>
 
-<header>
+<header class="main-header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg ">
+			<a class="navbar-brand" href="#">
+				<img class="brand__logo" src="assets/images/logo.svg" alt="Lorem Ipsum">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto left-side">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Customers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					</li>
+				</ul>
+				<div class="my-2 my-lg-0 right-side">
+					<a href="#" class="btn btn-login">Login</a>
+					<a href="#" class="btn">Start Now</a>
+				</div>
+			</div>
+		</nav>
+	</div>
 	
 </header>
 
 <main>
+	<!-- Main Description Section -->
+	<div class="main-section">
+		<div class="container">
+			<img class="main-section__logo" src="assets/images/logo.svg" alt="Lorem Ipsum">
+			<h1 class="main-section__title">THE PREMIUM CPA NETWORK</h1>
+			<div class="main-section__description">
+				<p>Lorem Ipsum has done extensive work to make life easy for<br /> its affiliates. Our high-quality landing pages, and a variety of<br /> creative marketing strategies coupled with in-depth<br /> analytics simplify the job for all our affiliates on the<br /> platform.</p>
+			</div>
+		</div>
+	</div> <!-- .main-section -->
+	
+	<!-- CTA Section -->
+	<div class="cta-section">
+		<div class="container">
+			<div class="cta-elements row">
+				<div class="elements col">
+					<img class="elements__image" src="assets/images/traffic.svg" alt="Elements 1">
+					<h3 class="elements__title">Traffic That Converts</h3>
+					<div class="elements__description">
+						<p>A systematic approach to<br /> selecting publishers and<br /> closely monitoring web-traffic<br /> to ensure every visitor<br /> converts and every lead is a<br /> potential lead.</p>
+					</div>
+				</div> <!-- .elements -->
+				<div class="elements col">
+					<img class="elements__image" src="assets/images/Analysis.svg" alt="Elements 1">
+					<h3 class="elements__title">In-Depth Analytics</h3>
+					<div class="elements__description">
+						<p>Boost campaign productivity<br /> with the help of in-depth and<br /> insightful data analytics.</p>
+					</div>
+				</div> <!-- .elements -->
+				<div class="elements col">
+					<img class="elements__image" src="assets/images/offers.svg" alt="Elements 1">
+					<h3 class="elements__title">Offers that Boost ROI</h3>
+					<div class="elements__description">
+						<p>Choose from an expansive<br /> list of offers that convert<br /> readily and boost ROI.</p>
+					</div>
+				</div> <!-- .elements -->
+				<div class="elements col">
+					<img class="elements__image" src="assets/images/data.svg" alt="Elements 1">
+					<h3 class="elements__title">Data-Backed Decisions</h3>
+					<div class="elements__description">
+						<p>An insightful look into the<br /> data to select only the most<br /> viable publishers and most<br /> converting CPA offers</p>
+					</div>
+				</div> <!-- .elements -->
+			</div>
+		</div>
+		
+	</div> <!-- .cta-section -->
+	
+	
 	
 </main>
 
-<footer>
-	
+<footer class="main-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col main-footer__logo">
+				<img class="logo" src="assets/images/logo.svg" alt="Lorem Ipsum">
+			</div>
+			<div class="col main-footer__widgets">
+				<div class="row">
+					<div class="widget col">
+						<h4 class="widget__title">About Us</h4>
+						<ul class="widget__list">
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Integrations</a></li>
+							<li><a href="#">Help Us</a></li>
+							<li><a href="#">Press Kit</a></li>
+							<li><a href="#">Jobs</a></li>
+						</ul>
+					</div>
+					<div class="widget col">
+						<h4 class="widget__title">About Us</h4>
+						<ul class="widget__list">
+							<li><a href="#">list</a></li>
+							<li><a href="#">list</a></li>
+							<li><a href="#">list</a></li>
+							<li><a href="#">list</a></li>
+						</ul>
+					</div>
+					<div class="widget col">
+						<h4 class="widget__title">About Us</h4>
+						<ul class="widget__list">
+							<li><a href="#">list</a></li>
+							<li><a href="#">list</a></li>
+							<li><a href="#">list</a></li>
+							<li><a href="#">list</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
 </footer>
 
 </body>

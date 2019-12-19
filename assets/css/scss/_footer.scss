@@ -1,0 +1,58 @@
+.main-footer {
+	background: url("../images/fotter_background.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	min-height: 382px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	@media screen and (max-width: 769px) {
+		min-height: inherit;
+	}
+	&__logo {
+		max-width: 175px;
+		width: 100%;
+		align-self: center;
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+	&__widgets {
+		
+	}
+}
+.widget {
+	&__title {
+		font-family: $roboto;
+		text-transform: uppercase;
+		color: $white;
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 28.5px;
+		margin-bottom: 0;
+	}
+	&__list {
+		font-family: $roboto;
+		color: $white;
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 28.5px;
+		padding-left: 0;
+		margin: 0;
+		* {
+			font-weight: inherit;
+			color: inherit;
+			font-family: inherit;
+			font-style: inherit;
+			font-size: inherit;
+		}
+		li {
+			list-style: none;
+			a {
+				
+			}
+		}
+	}
+}
